@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
-
 interface BackgroundProps {
   theme: 'cold' | 'warm'
   transitionProgress?: number
 }
-
 const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }) => {
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; size: number }>>([])
   const [gridSize, setGridSize] = useState(40)
@@ -37,10 +35,8 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
-
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {/* Основной фон с глубоким цветом */}
       <div 
         className={`absolute inset-0 transition-all duration-1500 ${
           theme === 'cold' 
@@ -48,8 +44,6 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
             : 'bg-gradient-to-br from-amber-900/40 via-orange-800/30 to-amber-950/50'
         }`}
       />
-
-      {/* Средний слой - насыщенность */}
       <div 
         className={`absolute inset-0 transition-all duration-1500 ${
           theme === 'cold' 
@@ -57,8 +51,6 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
             : 'bg-gradient-to-tr from-orange-800/15 via-transparent to-amber-800/20'
         }`}
       />
-
-      {/* Верхний слой - детали */}
       <div 
         className={`absolute inset-0 transition-all duration-1500 ${
           theme === 'cold' 
@@ -66,8 +58,6 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
             : 'bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-600/10 via-transparent to-transparent'
         }`}
       />
-
-      {/* Очень тонкая сетка */}
       <div 
         className="absolute inset-0 transition-opacity duration-1500"
         style={{
@@ -79,10 +69,7 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
           opacity: 0.2,
         }}
       />
-
-      {/* Акцентные свечения */}
       <div className="absolute inset-0">
-        {/* Холодные акценты */}
         <div 
           className={`absolute -top-32 -left-32 w-64 h-64 rounded-full blur-[80px] transition-all duration-1500 ${
             theme === 'cold' ? 'opacity-20' : 'opacity-0'
@@ -93,8 +80,6 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
             theme === 'cold' ? 'opacity-15' : 'opacity-0'
           } ${theme === 'cold' ? 'bg-indigo-500/10' : 'bg-transparent'}`}
         />
-
-        {/* Теплые акценты */}
         <div 
           className={`absolute top-1/3 -right-32 w-80 h-80 rounded-full blur-[90px] transition-all duration-1500 ${
             theme === 'warm' ? 'opacity-25' : 'opacity-0'
@@ -106,8 +91,6 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
           } ${theme === 'warm' ? 'bg-orange-500/15' : 'bg-transparent'}`}
         />
       </div>
-
-      {/* Акцентные частицы */}
       <div className="absolute inset-0">
         {particles.map((particle) => (
           <div
@@ -129,8 +112,6 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
           />
         ))}
       </div>
-
-      {/* Эффект глубины */}
       <div 
         className={`absolute inset-0 transition-all duration-1500 pointer-events-none ${
           theme === 'cold' 
@@ -138,8 +119,6 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
             : 'bg-gradient-to-t from-amber-950/25 via-transparent to-transparent'
         }`}
       />
-
-      {/* Виньетирование для фокуса */}
       <div 
         className={`absolute inset-0 transition-all duration-1500 pointer-events-none ${
           theme === 'cold' 
@@ -147,8 +126,6 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
             : 'shadow-[inset_0_0_100px_rgba(28,25,23,0.3)]'
         }`}
       />
-
-      {/* Градиентные края для контраста */}
       <div 
         className={`absolute inset-0 transition-all duration-1500 pointer-events-none ${
           theme === 'cold' 
@@ -156,8 +133,6 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
             : 'shadow-[0_0_80px_rgba(245,158,11,0.1)_inset]'
         }`}
       />
-
-      {/* Эффект перехода */}
       {transitionProgress > 0 && transitionProgress < 100 && (
         <div className="absolute inset-0 pointer-events-none">
           <div 
@@ -175,8 +150,6 @@ const Background: React.FC<BackgroundProps> = ({ theme, transitionProgress = 0 }
           />
         </div>
       )}
-
-      {/* Акцентные линии для динамики */}
       <div 
         className={`absolute inset-0 transition-all duration-1500 pointer-events-none ${
           theme === 'cold' 

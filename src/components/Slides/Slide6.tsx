@@ -5,7 +5,7 @@ export const Slide6 = () => (
     <div className="max-w-4xl mx-auto w-full">
       <div className="mb-8 sm:mb-12">
         <div className="inline-flex items-center justify-center p-2 sm:p-3 rounded-full mb-4">
-          <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-orange-300 border-none" />
+          <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-orange-300 border-none-css" />
         </div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-200 to-amber-200 bg-clip-text text-transparent">
           Кто в черной полосе препятствий
@@ -23,10 +23,10 @@ export const Slide6 = () => (
               <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
                 <div className="relative">
                   <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-orange-500/40 to-amber-500/40 flex items-center justify-center">
-                    <Users className="w-8 h-8 sm:w-10 sm:h-10 text-orange-200 border-none" />
+                    <Users className="w-8 h-8 sm:w-10 sm:h-10 text-orange-200 border-none-css" />
                   </div>
                   <div className="absolute -bottom-2 -right-2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-amber-500/50 to-yellow-500/50 flex items-center justify-center animate-pulse">
-                    <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-amber-200 border-none" />
+                    <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-amber-200 border-none-css" />
                   </div>
                 </div>
                 <div>
@@ -58,11 +58,11 @@ export const Slide6 = () => (
             <div className="relative">
               <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-amber-500/30 to-yellow-500/30 flex items-center justify-center animate-spin-slow">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-yellow-500/40 to-amber-500/40 flex items-center justify-center animate-pulse">
-                  <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-200 border-none" />
+                  <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-200 border-none-css" />
                 </div>
               </div>
               <div className="absolute -top-4 -left-4 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-orange-500/40 to-red-500/40 flex items-center justify-center animate-bounce">
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-orange-200 border-none" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-orange-200 border-none-css" />
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ export const Slide6 = () => (
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-amber-500/30 to-yellow-500/30 flex items-center justify-center">
-                  <Globe className="w-6 h-6 sm:w-7 sm:h-7 text-amber-200 border-none" />
+                  <Globe className="w-6 h-6 sm:w-7 sm:h-7 text-amber-200 border-none-css" />
                 </div>
               </div>
               <div className="flex-1">
@@ -106,7 +106,7 @@ export const Slide6 = () => (
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-yellow-500/30 to-orange-500/30 flex items-center justify-center">
-                  <Clock className="w-6 h-6 sm:w-7 sm:h-7 text-yellow-200 border-none" />
+                  <Clock className="w-6 h-6 sm:w-7 sm:h-7 text-yellow-200 border-none-css" />
                 </div>
               </div>
               <div className="flex-1">
@@ -154,11 +154,11 @@ export const Slide6 = () => (
         </div>
       </div>
       
-      <div className="mt-8 sm:mt-12 opacity-70 border-none">
-        <div className="inline-flex items-center gap-2 text-xs sm:text-sm text-amber-500/70 border-none">
-          <div className="w-1 h-1 rounded-full bg-amber-400/40 animate-pulse border-none" />
+      <div className="mt-8 sm:mt-12 opacity-70 border-none-css">
+        <div className="inline-flex items-center gap-2 text-xs sm:text-sm text-amber-500/70 border-none-css">
+          <div className="w-1 h-1 rounded-full bg-amber-400/40 animate-pulse border-none-css" />
           Истинное богатство — в доверии и поддержке, а не в материальном
-          <div className="w-1 h-1 rounded-full bg-amber-400/40 animate-pulse border-none" />
+          <div className="w-1 h-1 rounded-full bg-amber-400/40 animate-pulse border-none-css" />
         </div>
       </div>
     </div>
