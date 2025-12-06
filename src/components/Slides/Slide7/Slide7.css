@@ -1,68 +1,88 @@
+@supports (-webkit-touch-callout: none) {
+  .ios-disable-animations * {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .ios-no-animation {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .animate-pulse,
+  .animate-spin-slow,
+  .animate-bounce,
+  .animate-shimmer,
+  .animate-ping,
+  .animate-growLine {
+    animation: none !important;
+  }
+  
+  /* Статические состояния для элементов с анимациями */
+  .animate-pulse,
+  .ios-no-animation[class*="animate-"] {
+    opacity: 0.7;
+  }
+  
+  .animate-bounce {
+    transform: translateY(0) !important;
+  }
+  
+  .animate-spin-slow {
+    transform: rotate(0deg) !important;
+  }
+}
+
+/* Общие стили */
+.border-pink-500\/30 {
+  border-color: rgba(236, 72, 153, 0.3);
+}
+
+.border-rose-500\/30 {
+  border-color: rgba(244, 63, 94, 0.3);
+}
+
+.hover\:border-pink-500\/40:hover {
+  border-color: rgba(236, 72, 153, 0.4);
+}
+
+.hover\:border-rose-500\/40:hover {
+  border-color: rgba(244, 63, 94, 0.4);
+}
+
+/* iOS фиксы */
+.ios-icon {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  outline: none;
+}
+
+.ios-icon-container {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.ios-icon-fix {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ios-border-fix {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ios-no-outline {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 .ios-tap-fix {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
-}
-
-.animate-pulse.ios-no-outline,
-.animate-spin-slow.ios-no-outline,
-.animate-growLine.ios-no-outline {
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-focus-ring-color: rgba(0, 0, 0, 0);
-}
-
-.border-blue-400 {
-  border-color: #60a5fa !important;
-}
-
-.border-amber-400 {
-  border-color: #fbbf24 !important;
-}
-
-.animate-spin-slow {
-  animation: spin 3s linear infinite;
-  transform: translateZ(0);
-}
-
-@keyframes growLine {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.animate-growLine {
-  animation: growLine 2s ease-out forwards;
-}
-
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  will-change: opacity;
-}
-
-@supports (-webkit-touch-callout: none) {
-  .ios-no-outline {
-    outline: none !important;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
-  }
-  
-  .border-2 {
-    -webkit-appearance: none;
-    appearance: none;
-  }
-}
-
-.transition-all,
-.transition-colors,
-.transition-opacity {
-  transform: translateZ(0);
-  backface-visibility: hidden;
-}
-
-.animate-spin-slow {
-  -webkit-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-  transform: translateZ(0) rotate(0deg);
 }

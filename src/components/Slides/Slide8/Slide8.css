@@ -6,64 +6,25 @@
   border-color: rgba(236, 72, 153, 0.3);
 }
 
-.backdrop-blur-lg {
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-}
-
-.backdrop-blur-md {
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-}
-
-.blur-lg {
-  filter: none;
-  -webkit-filter: none;
-}
-
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  will-change: opacity;
-  transform: translateZ(0);
-}
-
-.animate-spin-slow {
-  animation: spin 3s linear infinite;
-  transform: translateZ(0);
-}
-
-.animate-bounce {
-  animation: bounce 1s infinite;
-  transform: translateZ(0);
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: .5;
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
 .hover\:text-pink-300\/80:hover {
   color: rgba(249, 168, 212, 0.8);
+}
+
+@supports (-webkit-touch-callout: none) {
+  .ios-no-animation {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .animate-pulse,
+  .animate-spin-slow,
+  .animate-bounce,
+  .animate-shimmer {
+    animation: none !important;
+  }
+  
+  .blur-lg {
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
 }
