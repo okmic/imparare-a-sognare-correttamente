@@ -1,4 +1,4 @@
-import { Brain, Target, Crown, ArrowRight, XCircle, Sparkles } from 'lucide-react'
+import { Brain, Target, Crown, ArrowRight, XCircle, Sparkles, Motorbike, Award } from 'lucide-react'
 
 export const Slide4 = () => (
   <div className="text-center text-white px-4 h-full flex flex-col justify-center">
@@ -90,10 +90,7 @@ export const Slide4 = () => (
         <div className="group relative">
           <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-lg rounded-2xl p-4 sm:p-5 border border-gray-700/30 transition-all duration-300 hover:border-red-500/40 hover:from-gray-800/70 h-full">
             <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-gray-700/50 to-gray-600/50 mb-3 sm:mb-4 mx-auto">
-              <div className="relative">
-                <div className="w-6 h-6 border-2 border-red-400/50 rounded-full animate-spin-slow" />
-                <div className="absolute inset-1 border border-red-300/50 rounded-full animate-pulse" />
-              </div>
+              <Motorbike />
             </div>
             <h3 className="text-lg sm:text-xl font-bold text-gray-100 mb-2">Бесконечная гонка</h3>
             <p className="text-sm sm:text-base text-gray-400/90">
@@ -106,10 +103,7 @@ export const Slide4 = () => (
         <div className="group relative">
           <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-lg rounded-2xl p-4 sm:p-5 border border-gray-700/30 transition-all duration-300 hover:border-gray-500/40 hover:from-gray-800/70 h-full">
             <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-gray-700/50 to-gray-600/50 mb-3 sm:mb-4 mx-auto">
-              <div className="relative">
-                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-gray-600/50 to-gray-700/50" />
-                <div className="absolute inset-1 rounded-full bg-gray-500/30 animate-pulse" />
-              </div>
+              <Award />
             </div>
             <h3 className="text-lg sm:text-xl font-bold text-gray-100 mb-2">Пустота достижений</h3>
             <p className="text-sm sm:text-base text-gray-400/90">
