@@ -4,7 +4,7 @@ export const Slide7 = () => (
   <div className="text-center text-white px-4 h-full flex flex-col justify-center">
     <div className="max-w-4xl mx-auto w-full">
       <div className="mb-8 sm:mb-12">
-        <div className="inline-flex items-center justify-center p-2 sm:p-3 rounded-full bg-gradient-to-r from-red-500/30 to-pink-500/30 backdrop-blur-lg border border-pink-500/30 mb-4 animate-pulse">
+        <div className="inline-flex items-center justify-center p-2 sm:p-3 rounded-full bg-gradient-to-r from-red-500/30 to-pink-500/30 border border-pink-500/30 mb-4 animate-pulse">
           <Star className="w-5 h-5 sm:w-6 sm:h-6 text-pink-300" />
         </div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-200 to-red-200 bg-clip-text text-transparent">
@@ -14,9 +14,10 @@ export const Slide7 = () => (
           Восторги не скрывать и счастье
         </p>
       </div>
+      
       <div className="relative mb-8 sm:mb-12">
         <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 to-red-500/10 rounded-3xl blur-xl animate-pulse" />
-        <div className="relative bg-gradient-to-br from-pink-900/30 to-red-900/30 backdrop-blur-lg rounded-2xl p-6 sm:p-8 border border-pink-500/30">
+        <div className="relative bg-gradient-to-br from-pink-900/30 to-red-900/30 rounded-2xl p-6 sm:p-8 border border-pink-500/30">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="flex-1">
               <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
@@ -37,6 +38,7 @@ export const Slide7 = () => (
                   </p>
                 </div>
               </div>
+              
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" />
@@ -66,9 +68,10 @@ export const Slide7 = () => (
           </div>
         </div>
       </div>
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
         <div className="group relative">
-          <div className="bg-gradient-to-br from-pink-900/20 to-rose-900/20 backdrop-blur-lg rounded-2xl p-5 sm:p-6 border border-pink-500/20 transition-all duration-300 hover:border-pink-500/40 hover:from-pink-900/30 h-full">
+          <div className="bg-gradient-to-br from-pink-900/20 to-rose-900/20 rounded-2xl p-5 sm:p-6 border border-pink-500/20 transition-all duration-300 hover:border-pink-500/40 hover:from-pink-900/30 h-full">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-pink-500/30 to-rose-500/30 flex items-center justify-center">
@@ -97,8 +100,9 @@ export const Slide7 = () => (
             </div>
           </div>
         </div>
+
         <div className="group relative">
-          <div className="bg-gradient-to-br from-rose-900/20 to-red-900/20 backdrop-blur-lg rounded-2xl p-5 sm:p-6 border border-rose-500/20 transition-all duration-300 hover:border-rose-500/40 hover:from-rose-900/30 h-full">
+          <div className="bg-gradient-to-br from-rose-900/20 to-red-900/20 rounded-2xl p-5 sm:p-6 border border-rose-500/20 transition-all duration-300 hover:border-rose-500/40 hover:from-rose-900/30 h-full">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-rose-500/30 to-red-500/30 flex items-center justify-center">
@@ -131,11 +135,12 @@ export const Slide7 = () => (
           </div>
         </div>
       </div>
+      
       <div className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-500/10 to-transparent animate-shimmer" />
-        <div className="relative bg-gradient-to-r from-pink-900/30 to-red-900/30 backdrop-blur-lg rounded-xl p-4 sm:p-6 border border-pink-500/30">
+        <div className="relative bg-gradient-to-r from-pink-900/30 to-red-900/30 rounded-xl p-4 sm:p-6 border border-pink-500/30">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <div className="text-4xl sm:text-5xl animate-bounce"><Heart /></div>
+            <div className="text-4xl sm:text-5xl animate-bounce">💖</div>
             <div>
               <p className="text-lg sm:text-xl font-bold text-pink-100">
                 Подлинные чувства — не скрывать восторг и счастье
@@ -144,10 +149,11 @@ export const Slide7 = () => (
                 Нести свет среди ненастья — вот истинное богатство
               </p>
             </div>
-            <div className="text-4xl sm:text-5xl animate-bounce"><Heart /></div>
+            <div className="text-4xl sm:text-5xl animate-bounce">💖</div>
           </div>
         </div>
       </div>
+      
       <div className="mt-8 sm:mt-12 opacity-70">
         <div className="inline-flex items-center gap-2 text-xs sm:text-sm text-pink-500/70">
           <div className="w-1 h-1 rounded-full bg-pink-400/40 animate-pulse" />
