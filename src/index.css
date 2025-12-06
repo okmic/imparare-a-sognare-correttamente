@@ -4,7 +4,7 @@ html body {
   background-color: #611697;
 }
 .border-none-css {
-  border: none;
+  border: none !important;
 }
 @keyframes float {
   0%, 100% {

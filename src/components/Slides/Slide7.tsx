@@ -1,4 +1,5 @@
 import { Heart, Star, Sun, Shield, MessageCircle, Eye } from 'lucide-react'
+import "../../index.css"
 
 export const Slide7 = () => (
   <div className="text-center text-white px-4 h-full flex flex-col justify-center">
