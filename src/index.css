@@ -1,9 +1,10 @@
 @import "tailwindcss";
-
+* {
+  border: none;
+}
 html body {
   background-color: #611697;
 }
-/* В index.css или глобальных стилях */
 @keyframes float {
   0%, 100% {
     transform: translateY(0) rotate(0deg);
@@ -15,7 +16,6 @@ html body {
     transform: translateY(10px) rotate(240deg);
   }
 }
-
 @keyframes pulse-glow {
   0%, 100% {
     opacity: 0.3;
@@ -24,7 +24,6 @@ html body {
     opacity: 0.6;
   }
 }
-
 @keyframes grid-move {
   0% {
     background-position: 0 0;
@@ -33,21 +32,23 @@ html body {
     background-position: 40px 40px;
   }
 }
-
 .animate-float {
   animation: float 20s infinite linear;
 }
-
 .animate-pulse-glow {
   animation: pulse-glow 4s ease-in-out infinite;
 }
-
 .animate-grid-move {
   animation: grid-move 20s linear infinite;
 }
-
-/* Для плавных переходов */
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@supports (-webkit-overflow-scrolling: touch) {
+  .icon-fix {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    transform: translateZ(0);
+  }
 }
