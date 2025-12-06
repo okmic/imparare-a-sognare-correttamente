@@ -5,9 +5,9 @@ export const Slide8 = () => (
     <div className="max-w-3xl mx-auto w-full">
       <div className="mb-6">
         <div className="inline-flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-pink-500/30 to-red-500/30 backdrop-blur-lg border border-red-500/30 mb-4 animate-pulse">
-          <Heart className="w-6 h-6 text-red-300" />
+          <Heart className="w-6 h-6 text-red-300 border-none" />
         </div>
-        <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-200 to-red-200 bg-clip-text text-transparent">
+        <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-200 to-red-200 bg-clip-text text-transparent border-none">
           Главный вывод
         </h2>
         <p className="text-base md:text-lg text-pink-300/80 mt-1">
@@ -18,7 +18,7 @@ export const Slide8 = () => (
       <div className="grid grid-cols-3 gap-3 mb-6">
         <div className="flex flex-col items-center">
           <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500/40 to-red-500/40 flex items-center justify-center mb-3 animate-pulse">
-            <Target className="w-6 h-6 text-red-200" />
+            <Target className="w-6 h-6 text-red-200 border-none" />
           </div>
           <h3 className="text-lg font-bold text-pink-100 mb-1">Вывод</h3>
           <p className="text-sm text-red-300/80">
@@ -103,14 +103,14 @@ export const Slide8 = () => (
         </div>
       </div>
       
-      <div className="opacity-60">
+      <div className="opacity-60 border-none">
         <a 
           href="https://okmic.github.io/okmic/" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-xs text-pink-400/60 hover:text-pink-300/80 transition-colors inline-flex items-center gap-1"
+          className="text-xs text-pink-400/60 hover:text-pink-300/80 transition-colors inline-flex items-center gap-1 border-none"
         >
-          <div className="w-1 h-1 rounded-full bg-pink-400/40 animate-pulse" />
+          <div className="w-1 h-1 rounded-full bg-pink-400/40 animate-pulse border-none" />
           created with ❤️ by okmic
           <div className="w-1 h-1 rounded-full bg-pink-400/40 animate-pulse" />
         </a>

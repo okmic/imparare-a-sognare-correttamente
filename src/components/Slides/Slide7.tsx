@@ -5,7 +5,7 @@ export const Slide7 = () => (
     <div className="max-w-4xl mx-auto w-full">
       <div className="mb-8 sm:mb-12">
         <div className="inline-flex items-center justify-center p-2 sm:p-3 rounded-full bg-gradient-to-r from-red-500/30 to-pink-500/30 backdrop-blur-lg border border-pink-500/30 mb-4 animate-pulse">
-          <Star className="w-5 h-5 sm:w-6 sm:h-6 text-pink-300" />
+          <Star className="w-5 h-5 sm:w-6 sm:h-6 text-pink-300 border-none" />
         </div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-200 to-red-200 bg-clip-text text-transparent">
           Богатство - искренне любить
@@ -22,10 +22,10 @@ export const Slide7 = () => (
               <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
                 <div className="relative">
                   <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-pink-500/40 to-red-500/40 flex items-center justify-center">
-                    <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-pink-200" />
+                    <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-pink-200 border-none" />
                   </div>
                   <div className="absolute -bottom-2 -right-2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-red-500/50 to-pink-500/50 flex items-center justify-center animate-pulse">
-                    <Star className="w-5 h-5 sm:w-6 sm:h-6 text-red-200" />
+                    <Star className="w-5 h-5 sm:w-6 sm:h-6 text-red-200 border-none" />
                   </div>
                 </div>
                 <div>
@@ -56,11 +56,11 @@ export const Slide7 = () => (
             <div className="relative">
               <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-red-500/30 to-pink-500/30 flex items-center justify-center animate-spin-slow">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-pink-500/40 to-red-500/40 flex items-center justify-center animate-pulse">
-                  <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-pink-200" />
+                  <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-pink-200 border-none" />
                 </div>
               </div>
               <div className="absolute -top-4 -left-4 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-pink-500/40 to-red-500/40 flex items-center justify-center animate-bounce">
-                <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-pink-200" />
+                <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-pink-200 border-none" />
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ export const Slide7 = () => (
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-pink-500/30 to-rose-500/30 flex items-center justify-center">
-                  <Sun className="w-6 h-6 sm:w-7 sm:h-7 text-pink-200" />
+                  <Sun className="w-6 h-6 sm:w-7 sm:h-7 text-pink-200 border-none" />
                 </div>
               </div>
               <div className="flex-1">
@@ -102,7 +102,7 @@ export const Slide7 = () => (
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-rose-500/30 to-red-500/30 flex items-center justify-center">
-                  <Eye className="w-6 h-6 sm:w-7 sm:h-7 text-rose-200" />
+                  <Eye className="w-6 h-6 sm:w-7 sm:h-7 text-rose-200 border-none" />
                 </div>
               </div>
               <div className="flex-1">
@@ -127,7 +127,7 @@ export const Slide7 = () => (
             </div>
           </div>
           <div className="absolute -bottom-3 right-4 w-6 h-6 rounded-full bg-gradient-to-br from-rose-500/40 to-red-500/40 flex items-center justify-center animate-pulse">
-            <MessageCircle className="w-3 h-3 text-rose-200 mx-auto mt-1.5" />
+            <MessageCircle className="w-3 h-3 text-rose-200 mx-auto mt-1.5 border-none" />
           </div>
         </div>
       </div>
@@ -148,11 +148,11 @@ export const Slide7 = () => (
           </div>
         </div>
       </div>
-      <div className="mt-8 sm:mt-12 opacity-70">
-        <div className="inline-flex items-center gap-2 text-xs sm:text-sm text-pink-500/70">
-          <div className="w-1 h-1 rounded-full bg-pink-400/40 animate-pulse" />
+      <div className="mt-8 sm:mt-12 opacity-70 border-none">
+        <div className="inline-flex items-center gap-2 text-xs sm:text-sm text-pink-500/70 border-none">
+          <div className="w-1 h-1 rounded-full bg-pink-400/40 animate-pulse border-none" />
           Любовь, искренность, свет — истинные драгоценности жизни
-          <div className="w-1 h-1 rounded-full bg-pink-400/40 animate-pulse" />
+          <div className="w-1 h-1 rounded-full bg-pink-400/40 animate-pulse border-none" />
         </div>
       </div>
     </div>
