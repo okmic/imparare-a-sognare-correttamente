@@ -3,8 +3,8 @@
 html body {
   background-color: #611697;
 }
-* {
-  border: none;
+.border-none-css {
+  border: none !important;
 }
 @keyframes float {
   0%, 100% {
@@ -46,10 +46,95 @@ html body {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@supports (-webkit-overflow-scrolling: touch) {
-  .icon-fix {
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0) scale(1.0, 1.0);
-    transform: translateZ(0);
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  .backdrop-blur-lg {
+    -webkit-backdrop-filter: blur(16px);
   }
+  
+  .animate-pulse,
+  .animate-spin-slow,
+  .animate-bounce {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
+.ios-fix {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  isolation: isolate;
+}
+
+.ios-icon {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  outline: none;
+}
+
+.ios-icon-container {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.ios-icon-fix {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ios-border-fix {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ios-no-outline {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .ios-icon,
+  .ios-icon-container,
+  .ios-icon-fix,
+  .ios-border-fix {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+    outline: none;
+  }
+  .animate-pulse,
+  .animate-spin-slow,
+  .animate-bounce,
+  .animate-shimmer {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.backdrop-blur-lg {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Явные цвета бордеров для предотвращения артефактов */
+.border-pink-500\/30 {
+  border-color: rgba(236, 72, 153, 0.3);
+}
+
+.border-rose-500\/30 {
+  border-color: rgba(244, 63, 94, 0.3);
+}
+
+.hover\:border-pink-500\/40:hover {
+  border-color: rgba(236, 72, 153, 0.4);
+}
+
+.hover\:border-rose-500\/40:hover {
+  border-color: rgba(244, 63, 94, 0.4);
 }

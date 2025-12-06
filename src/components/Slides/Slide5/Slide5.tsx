@@ -1,11 +1,12 @@
 import { Heart, DoorOpen, Eye, Sparkles, Users } from 'lucide-react'
-
+import "../../../index.css"
+import "./Slide5.css"
 export const Slide5 = () => (
-  <div className="text-center text-white px-4 h-full flex flex-col justify-center">
+  <div className="text-center text-white px-4 h-full flex flex-col justify-center ios-tap-fix">
     <div className="max-w-4xl mx-auto w-full">
       <div className="mb-8 sm:mb-12">
-        <div className="inline-flex items-center justify-center p-2 sm:p-3 rounded-full bg-gradient-to-r from-amber-500/30 to-orange-500/30 backdrop-blur-lg border border-orange-500/30 mb-4 animate-pulse">
-          <DoorOpen className="w-5 h-5 sm:w-6 sm:h-6 text-orange-300" />
+        <div className="inline-flex items-center justify-center p-2 sm:p-3 rounded-full bg-gradient-to-r from-amber-500/30 to-orange-500/30 border border-orange-500/30 mb-4 animate-pulse ios-icon-fix">
+          <DoorOpen className="w-5 h-5 sm:w-6 sm:h-6 text-orange-300 ios-icon" />
         </div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-amber-200 to-orange-200 bg-clip-text text-transparent">
           Я приоткрою тайны дверцу
@@ -15,13 +16,13 @@ export const Slide5 = () => (
         </p>
       </div>
       <div className="relative mb-8 sm:mb-12">
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-3xl blur-xl animate-pulse" />
-        <div className="relative bg-gradient-to-br from-amber-900/30 to-orange-900/30 backdrop-blur-lg rounded-2xl p-6 sm:p-8 border border-orange-500/30">
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-3xl blur-xl animate-pulse ios-no-outline" />
+        <div className="relative bg-gradient-to-br from-amber-900/30 to-orange-900/30 rounded-2xl p-6 sm:p-8 border border-orange-500/30 ios-border-fix">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="flex-1 text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
-                <div className="p-3 rounded-full bg-gradient-to-br from-amber-500/30 to-orange-500/30 animate-pulse">
-                  <Heart className="w-6 h-6 sm:w-7 sm:h-7 text-amber-300" />
+                <div className="p-3 rounded-full bg-gradient-to-br from-amber-500/30 to-orange-500/30 animate-pulse ios-icon-container">
+                  <Heart className="w-6 h-6 sm:w-7 sm:h-7 text-amber-300 ios-icon" />
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-bold text-amber-100">
                   Учитесь правильно мечтать
@@ -34,20 +35,20 @@ export const Slide5 = () => (
                 <p className="mb-5 text-3xl sm:text-4xl md:text-5xl font-black bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent leading-tight">
                   а сердцем
                 </p>
-                <div className="absolute -bottom-4 left-0 w-full h-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full overflow-hidden">
-                  <div className="h-full w-full bg-gradient-to-r from-amber-400 to-orange-400 animate-shimmer" />
+                <div className="absolute -bottom-4 left-0 w-full h-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full overflow-hidden ios-no-outline">
+                  <div className="h-full w-full bg-gradient-to-r from-amber-400 to-orange-400 animate-shimmer ios-no-outline" />
                 </div>
               </div>
             </div>
             
             <div className="relative">
-              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center animate-spin-slow">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-orange-500/30 to-red-500/30 flex items-center justify-center animate-pulse">
-                  <Eye className="w-8 h-8 sm:w-10 sm:h-10 text-orange-200" />
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center animate-spin-slow ios-no-outline">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-orange-500/30 to-red-500/30 flex items-center justify-center animate-pulse ios-icon-container">
+                  <Eye className="w-8 h-8 sm:w-10 sm:h-10 text-orange-200 ios-icon" />
                 </div>
               </div>
-              <div className="absolute -top-4 -right-4 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-amber-500/40 to-orange-500/40 flex items-center justify-center animate-bounce">
-                <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-amber-200" />
+              <div className="absolute -top-4 -right-4 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-amber-500/40 to-orange-500/40 flex items-center justify-center animate-bounce ios-icon-fix">
+                <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-amber-200 ios-icon" />
               </div>
             </div>
           </div>
@@ -56,11 +57,11 @@ export const Slide5 = () => (
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
         <div className="group relative">
-          <div className="bg-gradient-to-br from-amber-900/20 to-orange-900/20 backdrop-blur-lg rounded-2xl p-5 sm:p-6 border border-amber-500/20 transition-all duration-300 hover:border-amber-500/40 hover:from-amber-900/30 h-full">
+          <div className="bg-gradient-to-br from-amber-900/20 to-orange-900/20 rounded-2xl p-5 sm:p-6 border border-amber-500/20 transition-all duration-300 hover:border-amber-500/40 hover:from-amber-900/30 h-full ios-border-fix">
             <div className="flex items-center gap-4 mb-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-amber-500/30 to-orange-500/30 flex items-center justify-center">
-                  <Users className="w-6 h-6 sm:w-7 sm:h-7 text-amber-200" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-amber-500/30 to-orange-500/30 flex items-center justify-center ios-icon-container">
+                  <Users className="w-6 h-6 sm:w-7 sm:h-7 text-amber-200 ios-icon" />
                 </div>
               </div>
               <div className="flex-1">
@@ -74,11 +75,11 @@ export const Slide5 = () => (
             </div>
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-amber-400 animate-pulse ios-no-outline" />
                 <span className="text-sm text-amber-300/80">О ком, скучая и любя</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-amber-400 animate-pulse ios-no-outline" />
                 <span className="text-sm text-amber-300/80">Прошедших дней вам не заметить</span>
               </div>
             </div>
@@ -86,11 +87,11 @@ export const Slide5 = () => (
         </div>
 
         <div className="group relative">
-          <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 backdrop-blur-lg rounded-2xl p-5 sm:p-6 border border-orange-500/20 transition-all duration-300 hover:border-orange-500/40 hover:from-orange-900/30 h-full">
+          <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 rounded-2xl p-5 sm:p-6 border border-orange-500/20 transition-all duration-300 hover:border-orange-500/40 hover:from-orange-900/30 h-full ios-border-fix">
             <div className="flex items-center gap-4 mb-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-orange-500/30 to-red-500/30 flex items-center justify-center">
-                  <DoorOpen className="w-6 h-6 sm:w-7 sm:h-7 text-orange-200" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-orange-500/30 to-red-500/30 flex items-center justify-center ios-icon-container">
+                  <DoorOpen className="w-6 h-6 sm:w-7 sm:h-7 text-orange-200 ios-icon" />
                 </div>
               </div>
               <div className="flex-1">
@@ -104,30 +105,30 @@ export const Slide5 = () => (
             </div>
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-orange-400 animate-pulse ios-no-outline" />
                 <span className="text-sm text-orange-300/80">Переход к истинным ценностям</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-orange-400 animate-pulse ios-no-outline" />
                 <span className="text-sm text-orange-300/80">Осмысление настоящих богатств</span>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-gradient-to-br from-orange-500/40 to-red-500/40 flex items-center justify-center animate-pulse">
-            <div className="w-4 h-4 rounded-full bg-amber-200/90" />
+          <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-gradient-to-br from-orange-500/40 to-red-500/40 flex items-center justify-center animate-pulse ios-icon-fix">
+            <div className="w-4 h-4 rounded-full bg-amber-200/90 ios-no-outline" />
           </div>
         </div>
       </div>
       
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-amber-500/10 to-transparent animate-shimmer" />
-        <div className="relative bg-gradient-to-r from-amber-900/30 to-orange-900/30 backdrop-blur-lg rounded-xl p-4 sm:p-6 border border-amber-500/30">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-amber-500/10 to-transparent animate-shimmer ios-no-outline" />
+        <div className="relative bg-gradient-to-r from-amber-900/30 to-orange-900/30 rounded-xl p-4 sm:p-6 border border-amber-500/30 ios-border-fix">
           <div className="flex items-center justify-center gap-3 sm:gap-4">
-            <div className="text-3xl sm:text-4xl animate-bounce">❤️</div>
+            <div className="text-3xl sm:text-4xl animate-bounce ios-icon-fix">❤️</div>
             <p className="text-lg sm:text-xl font-bold text-amber-100">
               Подумайте сейчас о них — о тех, кто делает жизнь богатой
             </p>
-            <div className="text-3xl sm:text-4xl animate-bounce">❤️</div>
+            <div className="text-3xl sm:text-4xl animate-bounce ios-icon-fix">❤️</div>
           </div>
           <p className="text-sm sm:text-base text-amber-300/80 mt-3">
             Не о деньгах и статусе, а о людях и чувствах
@@ -137,9 +138,9 @@ export const Slide5 = () => (
       
       <div className="mt-8 sm:mt-12 opacity-70">
         <div className="inline-flex items-center gap-2 text-xs sm:text-sm text-amber-500/70">
-          <div className="w-1 h-1 rounded-full bg-amber-400/40 animate-pulse" />
+          <div className="w-1 h-1 rounded-full bg-amber-400/40 animate-pulse ios-no-outline" />
           Первый шаг к теплой теме: от холодного расчета к сердечным мечтам
-          <div className="w-1 h-1 rounded-full bg-amber-400/40 animate-pulse" />
+          <div className="w-1 h-1 rounded-full bg-amber-400/40 animate-pulse ios-no-outline" />
         </div>
       </div>
     </div>
