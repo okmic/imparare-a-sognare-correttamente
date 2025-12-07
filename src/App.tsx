@@ -10,13 +10,13 @@ import { Slide8 } from './components/Slides/Slide8/Slide8'
 
 function App() {
   const timeMarks = [
-    5000,
-    10000,
-    20000,
-    30000,
-    40000,
-    50000,
-    60000
+    21000,
+    35000,
+    47000,
+    82000,
+    108000,
+    135000,
+    163000,
   ]
 
   return (
